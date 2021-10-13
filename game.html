@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarRacing</title>
+    <style>
+        *{margin:0; padding: 0;}
+        .hide {
+            display: none;
+        }
+
+        .car {
+            width: 50px;
+            height: 70px;
+            background-color: red;
+            position: absolute;
+            top: 500px;
+            z-index: 2;
+
+        }
+
+        .road {
+            width: 350px;
+            height: 100vh;
+            background-color: black;
+            margin: auto;
+            position: relative
+        }
+        .lane{
+            width:30px;
+            height:150px;
+            background-color: white;
+            top: 40px;
+            margin-left: 170px;
+            position: absolute;
+            
+        }
+        .enemy{
+            width: 50px;
+            height: 70px;
+            background-color: blue;
+            position: absolute;
+            top: 500px;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="score"></div>
+        <div class="Start">Start the game</div>
+        <div class="road hide">
+
+            <!-- <div class="car"></div> -->
+        </div>
+    </div>
+    <script src="game.js"></script>
+    <!-- <script src="gametemplate.js"></script> -->
+</body>
+
+</html>
